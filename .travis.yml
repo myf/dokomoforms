@@ -7,11 +7,11 @@ cache:
     - $HOME/.cache/pip
     - node_modules
 addons:
-  postgresql: "9.6"
+  postgresql: "9.4"
   firefox: "42.0"
   apt:
     packages:
-      - postgresql-9.6-postgis-2.3
+      - postgresql-9.4-postgis-2.3
 
 before_install:
   - pip install coveralls flake8 coverage beautifulsoup4 py-dateutil pytz selenium
