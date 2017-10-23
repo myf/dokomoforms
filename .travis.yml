@@ -8,7 +8,7 @@ cache:
     - node_modules
 addons:
   postgresql: "9.6"
-  firefox: "48.0"
+  firefox: "45.4.0"
   apt:
     packages:
       - postgresql-9.6-postgis-2.3
