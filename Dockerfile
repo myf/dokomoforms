@@ -1,7 +1,7 @@
 FROM python:3.4
 WORKDIR /dokomo
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
-RUN apt-get update && apt-get install npm nodejs postgresql-client -y
+RUN apt-get update && apt-get install nodejs postgresql-client -y
 ADD package.json /tmp/package.json
 RUN cd /tmp && npm install && npm install lodash --save-dev
 RUN cp -a /tmp/node_modules /dokomo/
