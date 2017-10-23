@@ -1,5 +1,6 @@
 language: python
 python:
+  - "3.4"
   - "3.5"
 cache:
   directories:
@@ -7,7 +8,7 @@ cache:
     - node_modules
 addons:
   postgresql: "9.6"
-  firefox: "42.0"
+  firefox: "48.0"
   apt:
     packages:
       - postgresql-9.6-postgis-2.3
